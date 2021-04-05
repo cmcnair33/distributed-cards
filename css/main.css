@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: "Georgia", serif;
+  font-family: Georgia, serif;
   line-height: 1.5;
 }
 
@@ -9,16 +9,64 @@ html {
 }
 
 img {
-    width: 100%;
-    padding: 0 1rem;
+  width: 100%;
+  padding: 0 1rem;
+  height: 16rem;
 }
 
 h1, h2 {
   font-family: "Denk One", sans-serif;
   color: #623b0c;
-  padding: 0 1rem
+  padding: 0 1rem;
 }
 
 h1 {
   margin: 1rem 0;
+}
+
+h2 {
+  margin: 1rem 0 1.5rem;
+  padding-bottom: 0;
+}
+
+body {
+  background-color: #f5f2f0;
+  margin: 0;
+}
+
+ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "banner banner"
+    "col1 col2"
+    "col2 col2";
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: -.5rem;
+}
+
+a {
+  background-color: #623b0c;
+  border-radius: 8px;
+  padding: .5em 1rem .6em;
+  margin: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  border: 2px #623b0c solid;
+  border-radius: 8px;
+  background-color: #ede3db;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+}
+
+p {
+  padding: .5rem 1rem 0;
+  margin-bottom: .5rem;
 }
